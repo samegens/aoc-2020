@@ -1,4 +1,4 @@
-﻿var numbers = new List<int>();
+﻿List<int> numbers = new List<int>();
 foreach (string line in File.ReadLines("input.txt"))
 {
     if (int.TryParse(line, out int number))
@@ -21,5 +21,3 @@ foreach (int number1 in numbers)
 }
 
 Console.WriteLine("No two numbers were found that sum to 2020.");
-
-List<int> myVar = new List<int>{ 1, 2, 3 };
